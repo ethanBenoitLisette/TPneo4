@@ -19,10 +19,10 @@ pip install -r requirements.txt
 Ensuite, j’ai utilisé Docker pour lancer Neo4j (comme ça pas besoin d’installer Neo4j sur mon ordi directement) :
 
 ```bash
-docker run --name neo4j -d -p 9000:9000 -p 9001:9001 -e NEO4J_AUTH=neo4j/ui neo4j
+docker run --name neo4j -d -p 7474:7474 -p 7687:7687 -e NEO4J_AUTH=neo4j/ui neo4j
 ```
 
-➡️ L’interface web de Neo4j est accessible ici : [http://localhost:9000](http://localhost:9000)
+➡️ L’interface web de Neo4j est accessible ici : [http://localhost:7474](http://localhost:7474)
 🧠 Identifiants par défaut : `neo4j / ui` (je les ai gardés simples pour tester)
 
 ### 3. Lancer le serveur Flask
